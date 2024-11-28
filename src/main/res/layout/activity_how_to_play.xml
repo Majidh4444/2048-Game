@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8EF"
+    android:contentDescription="Instructions on how to play the 2048 game">
+
+    <LinearLayout
+        android:id="@+id/howToPlayContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Placeholder for dynamic content -->
+        <TextView
+            android:id="@+id/instructionsPlaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instructions on how to play the game will appear here."
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="#000000"/>
+
+        <!-- Optional Image View for game screenshot -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/game_screenshot"
+            android:contentDescription="Screenshot of the 2048 game interface"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>
